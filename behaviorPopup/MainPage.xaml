@@ -1,13 +1,30 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit" xmlns:behaviorpopup="clr-namespace:behaviorPopup"
              x:Class="behaviorPopup.MainPage">
+    <VerticalStackLayout Spacing="10">
+        <Button
+            Margin="20"
+            Text="Punch Me"
+            HorizontalOptions="Center"
+            VerticalOptions="Center"
+            Clicked="Button_Clicked"/>
+        <Image Source="https://e7.pngegg.com/pngimages/929/60/png-clipart-net-framework-c-net-core-software-framework-mono-studio-purple-studio.png"
+               WidthRequest="30"
+               HeightRequest="30">
+            <Image.Behaviors>
+                <toolkit:IconTintColorBehavior TintColor="Red" />
+                <behaviorpopup:CustomBehavior/>
+            </Image.Behaviors>
+        </Image>
 
-    <Button
-        Text="Punch Me"
-        HorizontalOptions="Center"
-        VerticalOptions="Center"
-        Clicked="Button_Clicked"/>
+        <Image Source="https://e7.pngegg.com/pngimages/929/60/png-clipart-net-framework-c-net-core-software-framework-mono-studio-purple-studio.png"
+               WidthRequest="30"
+               HeightRequest="30"/>
+
+    </VerticalStackLayout>
+    
 
 </ContentPage>
 
