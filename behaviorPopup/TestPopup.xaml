@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<toolkit:Popup
+        xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit" xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+        x:Class="behaviorPopup.TestPopup">
+    <VerticalStackLayout>
+        <Image Source="https://e7.pngegg.com/pngimages/929/60/png-clipart-net-framework-c-net-core-software-framework-mono-studio-purple-studio.png"
+               WidthRequest="30"
+               HeightRequest="30">
+            <Image.Behaviors>
+                <toolkit:IconTintColorBehavior TintColor="Red" />
+            </Image.Behaviors>
+        </Image>
+
+        <Image Source="https://e7.pngegg.com/pngimages/929/60/png-clipart-net-framework-c-net-core-software-framework-mono-studio-purple-studio.png"
+               WidthRequest="30"
+               HeightRequest="30"/>
+    </VerticalStackLayout>
+</toolkit:Popup>
